@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <!-- CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             script-src 'self' 'unsafe-inline';
+             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+             font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+             img-src 'self' data: blob: *;
+             media-src 'self' data: blob: *;
+             connect-src 'self';"/>
+
+  <!-- SEO -->
+  <title>TKJ XI-9 - Beranda | SMK Negeri 1</title>
+  <meta name="description" content="TKJ XI-9 - Beranda | Kelas Teknik Komputer Jaringan SMK Negeri 1. Solid, Kreatif, dan Berdedikasi Tanpa Batas dalam menguasai teknologi digital."/>
+  <meta name="keywords" content="TKJ, XI-9, SMK Negeri 1, Teknik Komputer Jaringan, kelas TKJ"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="./index.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:title"       content="TKJ XI-9 - Beranda | SMK Negeri 1"/>
+  <meta property="og:description" content="Kelas Teknik Komputer Jaringan yang solid, kreatif, dan berdedikasi. Komunitas pejuang digital SMK Negeri 1."/>
+  <meta property="og:image"       content="https://picsum.photos/seed/tkj-xi9-og/1200/630"/>
+  <meta property="og:url"         content="./index.html"/>
+  <meta property="og:locale"      content="id_ID"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="TKJ XI-9 - Beranda | SMK Negeri 1"/>
+  <meta name="twitter:description" content="Kelas Teknik Komputer Jaringan SMK Negeri 1"/>
+  <meta name="twitter:image"       content="https://picsum.photos/seed/tkj-xi9-og/1200/630"/>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#0f0a0a"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23b91c1c'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='white'>TKJ</text></svg>"/>
+
+  <!-- Fonts Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Rajdhani:wght@500;700&display=swap"/>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Rajdhani:wght@500;700&display=swap"
+    media="print" onload="this.media='all'"/>
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Rajdhani:wght@500;700&display=swap"/>
+  </noscript>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- SKIP TO CONTENT -->
+<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+<!-- PAGE PROGRESS (link navigation) -->
+<div id="page-progress" aria-hidden="true"></div>
+<!-- SCROLL PROGRESS (top thin bar) -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- INTRO -->
+<div id="intro" role="dialog" aria-label="Layar pembuka TKJ XI-9" aria-modal="true">
+  <div class="intro-grid" aria-hidden="true"></div>
+  <div class="intro-scan" aria-hidden="true"></div>
+  <div class="intro-corners" aria-hidden="true">
+    <div class="c c-tl"></div><div class="c c-tr"></div>
+    <div class="c c-bl"></div><div class="c c-br"></div>
+  </div>
+  <div class="intro-body">
+    <div class="intro-word" data-text="WELCOME" aria-hidden="true">WELCOME</div>
+    <div class="intro-sub" id="intro-sub" aria-live="polite">Initializing TKJ XI-9...</div>
+    <div class="intro-bar-wrap" aria-hidden="true">
+      <div class="intro-bar" id="intro-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+    </div>
+    <div class="intro-pct" id="intro-pct" aria-hidden="true">0%</div>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<header class="top-bar" role="banner">
+  <div class="top-bar-brand">
+    <div class="brand-badge" aria-hidden="true">TKJ</div>
+    <div>
+      <div class="brand-name">TKJ XI-9</div>
+      <div class="brand-year mono">2024/2025</div>
+    </div>
+  </div>
+  <div class="top-bar-actions">
+    <button class="theme-toggle" id="theme-btn" aria-label="Aktifkan mode terang"
+            data-tooltip="Toggle Tema (T)">
+      <i class="fas fa-sun" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+
+<!-- TAB BAR -->
+<nav class="tab-bar" aria-label="Navigasi utama">
+  <a href="index.html"     class="tab-item" aria-label="Home"><i class="fas fa-house" aria-hidden="true"></i><span>Home</span></a>
+  <a href="about.html"     class="tab-item" aria-label="Tentang"><i class="fas fa-circle-info" aria-hidden="true"></i><span>Tentang</span></a>
+  <a href="structure.html" class="tab-item" aria-label="Struktur"><i class="fas fa-sitemap" aria-hidden="true"></i><span>Struktur</span></a>
+  <a href="members.html"   class="tab-item" aria-label="Anggota"><i class="fas fa-users" aria-hidden="true"></i><span>Anggota</span></a>
+  <a href="skills.html"    class="tab-item" aria-label="Skills"><i class="fas fa-code" aria-hidden="true"></i><span>Skills</span></a>
+  <a href="gallery.html"   class="tab-item" aria-label="Galeri"><i class="fas fa-images" aria-hidden="true"></i><span>Galeri</span></a>
+  <a href="tkj.html"       class="tab-item" aria-label="Info TKJ"><i class="fas fa-network-wired" aria-hidden="true"></i><span>TKJ</span></a>
+</nav>
+
+<!-- MAIN -->
+<main id="main-content">
+
+  <!-- Countdown -->
+  <div id="countdown-strip" class="countdown-strip" aria-label="Hitung mundur ujian">
+    <div class="countdown-label">Ujian Akhir Semester</div>
+    <div class="countdown-units">
+      <div class="cd-unit"><span class="cd-num cd-days">00</span><span class="cd-lbl">Hari</span></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-unit"><span class="cd-num cd-hours">00</span><span class="cd-lbl">Jam</span></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-unit"><span class="cd-num cd-mins">00</span><span class="cd-lbl">Menit</span></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-unit"><span class="cd-num cd-secs">00</span><span class="cd-lbl">Detik</span></div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Selamat datang di TKJ XI-9">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-floats" aria-hidden="true">
+      <div class="float-icon fi1"><i class="fas fa-network-wired"></i></div>
+      <div class="float-icon fi2"><i class="fas fa-code"></i></div>
+      <div class="float-icon fi3"><i class="fas fa-shield-halved"></i></div>
+      <div class="float-icon fi4"><i class="fas fa-microchip"></i></div>
+      <div class="float-icon fi5"><i class="fas fa-terminal"></i></div>
+      <div class="float-icon fi6"><i class="fas fa-server"></i></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Teknik Komputer &amp; Jaringan</div>
+      <h1 class="hero-title">
+        Kelas <span class="hl">XI-9</span><br>Yang Beda.
+      </h1>
+      <p class="hero-desc" id="hero-slogan" aria-live="polite" data-fallback="Komunitas pejuang digital yang siap menguasai jaringan, keamanan siber, dan teknologi masa depan dengan semangat dan kompetensi nyata.">
+        Komunitas pejuang digital yang siap menguasai jaringan, keamanan siber,
+        dan teknologi masa depan dengan semangat dan kompetensi nyata.
+      </p>
+      <div class="hero-cta">
+        <a href="about.html" class="btn btn-primary">Kenali Kami <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="members.html" class="btn btn-outline">Lihat Anggota</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <div id="stats-strip" class="stats-strip" aria-label="Statistik kelas"></div>
+
+  <!-- Quick links -->
+  <section class="container" style="padding-top:32px;padding-bottom:40px" aria-label="Menu utama">
+    <div class="sec-head">
+      <div class="sec-tag">Jelajahi</div>
+      <h2 class="sec-title">Menu Utama</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">
+      <a href="about.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0s" aria-label="Halaman Tentang">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-circle-info"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">Tentang</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px">Visi, misi, motto</div>
+      </a>
+      <a href="structure.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0.06s" aria-label="Halaman Struktur Organisasi">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-sitemap"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">Struktur</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px">Kepengurusan</div>
+      </a>
+      <a href="members.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0.12s" aria-label="Halaman Anggota Kelas">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-users"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">Anggota</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px" id="ql-member-count">—</div>
+      </a>
+      <a href="skills.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0.18s" aria-label="Halaman Keahlian">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">Skills</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px">Kompetensi kelas</div>
+      </a>
+      <a href="gallery.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0.24s" aria-label="Halaman Galeri Foto">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-images"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">Galeri</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px">Momen bersama</div>
+      </a>
+      <a href="tkj.html" class="card card-accent-top reveal" style="text-align:center;padding:22px 14px;--d:0.30s" aria-label="Halaman Info Jurusan TKJ">
+        <div class="icon-box lg" style="margin:0 auto 12px" aria-hidden="true"><i class="fas fa-network-wired"></i></div>
+        <div style="font-weight:700;font-size:var(--text-sm);color:var(--text-1)">TKJ</div>
+        <div style="font-size:var(--text-xs);color:var(--text-3);margin-top:3px">Info jurusan</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-strip container" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-copy">© <span class="footer-year hl"></span> TKJ XI-9 · SMK Negeri 1</div>
+      <div class="footer-links">
+        <a href="tkj.html">Info TKJ</a>
+        <a href="about.html">Tentang</a>
+        <a href="404.html">404</a>
+        <a href="offline.html">Offline</a>
+      </div>
+    </div>
+    <div class="footer-social" aria-label="Sosial media kami"></div>
+    <div style="display:flex;justify-content:flex-end">
+      <button id="replay-intro-btn" aria-label="Putar ulang intro">
+        <i class="fas fa-rotate-right" aria-hidden="true"></i> Replay Intro
+      </button>
+    </div>
+  </footer>
+
+</main>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Kembali ke atas">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</button>
+
+<script src="settings.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
